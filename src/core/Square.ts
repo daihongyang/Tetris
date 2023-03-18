@@ -6,7 +6,6 @@ export class Square {
     private _point:IPoint = {x:0,y:0}
     private _color:string = ''
     public constructor() {
-        
     }
     //方块坐标
     public get point(){
@@ -14,6 +13,7 @@ export class Square {
     }
 
     public set point(value){
+        console.log(this._viewer)
         this._point = value;
         if(this._viewer){
             this._viewer.show();
@@ -38,5 +38,8 @@ export class Square {
 
     public set viewer(v){
         this._viewer = v
+        if(this._viewer){
+            this._viewer.show();
+        }
     }
 }

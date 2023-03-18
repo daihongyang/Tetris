@@ -9,3 +9,6 @@ export interface IViewer {
     //移除函数
     remove():void;
 }
+
+//小方块组合类形状
+export type Shape =  IPoint[]

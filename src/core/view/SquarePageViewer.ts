@@ -13,6 +13,7 @@ export class SquarePageViewer implements IViewer {
             return;
         }
         if (!this.dom) {
+            
             this.dom = $('<div>').css({
                 position: 'absolute',
                 width: PageConfig.SquareSize.width,
