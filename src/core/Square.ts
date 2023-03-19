@@ -13,7 +13,6 @@ export class Square {
     }
 
     public set point(value){
-        console.log(this._viewer)
         this._point = value;
         if(this._viewer){
             this._viewer.show();
